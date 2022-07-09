@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "fogdb"
-version = "0.0.8"
+version = "0.0.9"
 description = "Forest Garden Database API"
 authors = ["Mathias Ammon <mathias.ammon@tuhh.de>"]
 license = "MIT"
