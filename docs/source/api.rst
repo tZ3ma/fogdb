@@ -3,7 +3,7 @@
 API
 ===
 
-.. automodule:: hpmpy_project
+.. automodule:: fogdb
    :members:
    :show-inheritance:
 

@@ -1,2 +1,2 @@
-# hpmpy_project/tests/__init__.py
-"""hpmpy-project's (pytest) package."""
+# fogdb/tests/__init__.py
+"""fogdb's (pytest) package."""

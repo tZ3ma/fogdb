@@ -33,7 +33,7 @@ print(sys.path)
 
 # -- Project information -----------------------------------------------------
 
-project = "hpmpy_project - Hypermodern Python Project Template"
+project = "fogdb - Forest Garden Database API"
 author = "Mathias Ammon"
 copyright = f"2022, {author}"  # pylint: disable=redefined-builtin
 
@@ -44,15 +44,12 @@ extensions = [
     "sphinx.ext.napoleon",  # enable numpy style docstring syntax
     "sphinx.ext.viewcode",  # enable source links
     # 3rd party extensions
-    # 'sphinx_execute_code',  # execute code
     "sphinx_paramlinks",  # enable :param: cross referencing
-    # 'sphinxcontrib.excel_table',  # show xlsx exceltables
-    # 'sphinxcontrib.exceltable',  # show xls exceltables
 ]
 
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {
-    "canonical_url": "https://github.com/tZ3ma/hpmpy_project/",
+    "canonical_url": "https://github.com/tZ3ma/fogdb/",
     "display_version": True,
     "sticky_navigation": True,
     # 'style_nav_header_background': '#009682',
