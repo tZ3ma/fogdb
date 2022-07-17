@@ -1,0 +1,3 @@
+[default]
+common_names = Juneberry, Serviceberry
+USDA_hardiness = 4

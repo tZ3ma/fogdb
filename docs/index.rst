@@ -18,6 +18,7 @@ It uses the excellent Hypermodern-Python_ project foundation proposed by
    :maxdepth: 1
    :caption: User Guide
 
+   source/user_guide/raw_data_structure
    source/user_guide/faq
 
 .. toctree::

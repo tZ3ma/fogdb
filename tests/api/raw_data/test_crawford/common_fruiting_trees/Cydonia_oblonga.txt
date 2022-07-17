@@ -1,0 +1,3 @@
+[default]
+common_names = Quince,
+USDA_hardiness = 4

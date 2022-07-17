@@ -12,6 +12,8 @@ keywords = ["forest-garden", "database", "cassandra", "api"]
 [tool.poetry.dependencies]
 python = "^3.8"
 requests = "^2.27.1"
+PyYAML = "^6.0"
+pysmb = "^1.2.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.1.2"

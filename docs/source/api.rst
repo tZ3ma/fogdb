@@ -9,3 +9,6 @@ API
 
 .. toctree::
    :maxdepth: 4
+
+   api/setup
+   api/raw

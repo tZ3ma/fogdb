@@ -7,6 +7,14 @@ Unittests
    :members:
    :show-inheritance:
 
+.. rubric:: fogdb API Tests
+.. toctree::
+   :maxdepth: 4
+
+   unittests/test_setup
+   unittests/test_raw
+
+.. rubric:: Default Template Tests
 .. toctree::
    :maxdepth: 4
 
