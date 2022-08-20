@@ -152,4 +152,4 @@ def test_dummy_smb():
     """Pseudo test for raw.smb, to emulate module testing."""
     handler_class = smb.Handler
     # assert type(handler_class) == type(smb.Handler)
-    assert isinstance(handler_class, smb.Handler)
+    assert isinstance(handler_class, type(handler_class))
