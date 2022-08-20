@@ -1,4 +1,4 @@
-# tests/api/setup.py
+# tests/api/test_setup.py
 """Test correct fogdb setup."""
 import configparser
 

@@ -1,4 +1,4 @@
-# src/fogdb/database.py
+# src/fogdb/setup.py
 """Module for setting up fogdb."""
 import logging
 from pathlib import Path
@@ -13,7 +13,7 @@ def _create_home(path="~/.fogdb"):
     return pth
 
 
-def _create_db_toplevel_folder(path="~/.fgdb"):
+def _create_db_toplevel_folder(path="~/.fogdb_databases"):
     """Create the cassandra database toplevel folder."""
     pth = Path(path)
     pth.mkdir(parents=True, exist_ok=True)
@@ -30,16 +30,21 @@ class Initializer:
 
     Parameters
     ----------
-    home: path, str
-    database: path, str
+    home: path, str, default="~/.fogdb.d"
+        Path or string specifying FogDB's new home folder. Config files and
+        future auxilliaries be located there.
+    database: path, str, default="~/.fogdb_databases"
+        Path or string specifying FogDB's new database folder. Database
+        "objects" will be located there.
     config: str, default = "conf.cfg"
-
+        String specifying the config file name. Holds info of home and database
+        path, as well as datamodels used.
     """
 
     def __init__(
         self,
         home="~/.fogdb.d",
-        database="~/.fgdb",
+        database="~/.fogdb_databases",
         config="conf.cfg",
     ):
         # initialize home
