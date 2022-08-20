@@ -5,7 +5,7 @@ from pathlib import Path
 import pytest
 
 from fogdb import raw
-from fogdb.raw import lcl
+from fogdb.raw import lcl, smb
 
 # path relative to project root from where the nox test session is called:
 raw_data_folder = Path("tests/api/raw_data").absolute()
@@ -146,3 +146,10 @@ def test_to_dict_dtype_all():
 
     rdm = raw.to_dict(lcl.Handler(raw_data_folder, dtype="all"))
     assert rdm == expected
+
+
+def test_dummy_smb():
+    """Pseudo test for raw.smb, to emulate module testing."""
+    handler_class = smb.Handler
+    # assert type(handler_class) == type(smb.Handler)
+    assert isinstance(handler_class, smb.Handler)

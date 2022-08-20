@@ -9,7 +9,7 @@ from smb.SMBHandler import SMBHandler
 from . import BaseHandler
 from .reader import parser
 
-
+# pragma: no cover
 # on pylint:
 # pylint: disable=too-many-arguments
 # 3 argumetns passed on to parent class. 7-3 = 4 ;)
@@ -19,6 +19,8 @@ from .reader import parser
 # Until now however, i have not figured out, how to set up a samba network drive
 # on a CI-Environment like github.
 # Help would be greatly appreciated.
+
+
 class Handler(BaseHandler):  # pragma: no cover
     """Handle data mapping for locally stored raw data.
 
