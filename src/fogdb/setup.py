@@ -8,14 +8,14 @@ logger = logging.getLogger(__name__)
 
 def _create_home(path="~/.fogdb"):
     """Create the fogdb home folder."""
-    pth = Path(path)
+    pth = Path(path).expanduser()
     pth.mkdir(parents=True, exist_ok=True)
     return pth
 
 
 def _create_db_toplevel_folder(path="~/.fogdb_databases"):
     """Create the cassandra database toplevel folder."""
-    pth = Path(path)
+    pth = Path(path).expanduser()
     pth.mkdir(parents=True, exist_ok=True)
     return pth
 
@@ -58,8 +58,9 @@ class Initializer:
         logger.debug("Initialized fogdb database in %s", db_p)
 
         # create config file
-        self.config = config
-        self.config_file_path = self.home / self.config
+        self.config = Path(config)
+        config_file = self.home / self.config
+        self.config_file_path = config_file.expanduser()
 
         _cf_lines = [
             "[default]\n",

@@ -46,6 +46,7 @@ def test_to_dict_dtype_yml():
             "common_fruiting_trees": {},
             "less_common_fruiting_trees": {
                 "Asimina_triloba": {
+                    "latin": "Asimina triloba",
                     "common_names": ["PawPaw", "Pawpaw"],
                     "USDA_hardiness": 5,
                 }
@@ -76,11 +77,20 @@ def test_to_dict_dtype_txt():
     expected = {
         "test_crawford": {
             "common_fruiting_trees": {
-                "Cydonia_oblonga": {"common_names": ["Quince"], "usda_hardiness": "4"},
-                "Ficus_carica": {"common_names": ["Fig"], "usda_hardiness": "7"},
+                "Cydonia_oblonga": {
+                    "latin": "Cydonia oblonga",
+                    "common_names": ["Quince"],
+                    "usda_hardiness": "4",
+                },
+                "Ficus_carica": {
+                    "latin": "Ficus carica",
+                    "common_names": ["Fig"],
+                    "usda_hardiness": "7",
+                },
             },
             "less_common_fruiting_trees": {
                 "Armelancher_canadensis": {
+                    "latin": "Armelancher canadensis",
                     "common_names": ["Juneberry", "Serviceberry"],
                     "usda_hardiness": "4",
                 }
@@ -88,7 +98,11 @@ def test_to_dict_dtype_txt():
         },
         "test_jacke": {
             "plant_matrix": {
-                "Cydonia_oblonga": {"common_names": ["Quince"], "usda_hardiness": "4"}
+                "Cydonia_oblonga": {
+                    "latin": "Cydonia oblonga",
+                    "common_names": ["Quince"],
+                    "usda_hardiness": "4",
+                }
             }
         },
     }
@@ -103,6 +117,7 @@ def test_to_dict_dtype_cfg():
             "common_fruiting_trees": {},
             "less_common_fruiting_trees": {
                 "Arbutus unedo": {
+                    "latin": "Arbutus unedo",
                     "common_names": ["Strawberry Tree"],
                     "usda_hardiness": "7",
                 }
@@ -119,19 +134,30 @@ def test_to_dict_dtype_all():
     expected = {
         "test_crawford": {
             "common_fruiting_trees": {
-                "Cydonia_oblonga": {"common_names": ["Quince"], "usda_hardiness": "4"},
-                "Ficus_carica": {"common_names": ["Fig"], "usda_hardiness": "7"},
+                "Cydonia_oblonga": {
+                    "latin": "Cydonia oblonga",
+                    "common_names": ["Quince"],
+                    "usda_hardiness": "4",
+                },
+                "Ficus_carica": {
+                    "latin": "Ficus carica",
+                    "common_names": ["Fig"],
+                    "usda_hardiness": "7",
+                },
             },
             "less_common_fruiting_trees": {
                 "Arbutus unedo": {
+                    "latin": "Arbutus unedo",
                     "common_names": ["Strawberry Tree"],
                     "usda_hardiness": "7",
                 },
                 "Armelancher_canadensis": {
+                    "latin": "Armelancher canadensis",
                     "common_names": ["Juneberry", "Serviceberry"],
                     "usda_hardiness": "4",
                 },
                 "Asimina_triloba": {
+                    "latin": "Asimina triloba",
                     "common_names": ["PawPaw", "Pawpaw"],
                     "USDA_hardiness": 5,
                 },
@@ -139,7 +165,11 @@ def test_to_dict_dtype_all():
         },
         "test_jacke": {
             "plant_matrix": {
-                "Cydonia_oblonga": {"common_names": ["Quince"], "usda_hardiness": "4"}
+                "Cydonia_oblonga": {
+                    "latin": "Cydonia oblonga",
+                    "common_names": ["Quince"],
+                    "usda_hardiness": "4",
+                }
             }
         },
     }

@@ -1,0 +1,4 @@
+[cassy]
+test_crawford.common_fruiting_trees = /tmp/pytest-of-tze/pytest-3/pytest_fogdb.d0/db_data_models/cassy/test_crawford/common_fruiting_trees.py
+test_crawford.less_common_fruiting_trees = /tmp/pytest-of-tze/pytest-3/pytest_fogdb.d0/db_data_models/cassy/test_crawford/less_common_fruiting_trees.py
+test_jacke.plant_matrix = /tmp/pytest-of-tze/pytest-3/pytest_fogdb.d0/db_data_models/cassy/test_jacke/plant_matrix.py

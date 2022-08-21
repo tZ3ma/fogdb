@@ -1,3 +1,4 @@
 [default]
+latin = Cydonia oblonga
 common_names = Quince,
 USDA_hardiness = 4

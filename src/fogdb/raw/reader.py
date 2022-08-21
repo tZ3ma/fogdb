@@ -17,7 +17,6 @@ def create_list_cfg_parser():
 def config(path):
     """Read in config style data source files."""
     # recreate configparser to prevent bleed over
-    print(path)
     list_configparser = create_list_cfg_parser()
     list_configparser.read(path)
 
